@@ -11,9 +11,7 @@ const links = [
   { href: "/glog", label: "Glog" }
 ];
 
-type Header = {};
-
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header>
       <nav>
