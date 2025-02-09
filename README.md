@@ -60,7 +60,7 @@ Content is retrieved using **GraphQL**. See the `/src/lib/` directory for the qu
 
 ### Code Formatting
 
-- Run ESLint & Prettier before committing:
+Run ESLint & Prettier before committing:
 
 ```sh
 npm run lint
