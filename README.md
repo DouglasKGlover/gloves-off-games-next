@@ -67,10 +67,6 @@ npm run lint
 npm run format
 ```
 
-### Committing Changes
-
-- Follow conventional commit messages (e.g., `feat: add new page`)
-
 ## 📜 License
 
 This project is licensed under the **MIT License**.
