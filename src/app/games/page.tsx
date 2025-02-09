@@ -1,21 +1,27 @@
-import React from "react";
-import Header from "../../components/layout/Header";
+import { fetchContent } from "@/lib/contentful";
+import { ALL_GAMES } from "@/lib/queries/games";
+import GameList from "@/components/sections/GameList";
+import { Game } from "@/types/Game";
 
 export const metadata = {
   title: "Gloves Off Games - Games",
   description: "A page where I list all of my games.",
 };
 
-const Page: React.FC = () => {
+export default async function Page() {
+  // Fetch the data for all games
+  const allGamesData = (await fetchContent(ALL_GAMES)) as {
+    gameCollection: {
+      items: Game[];
+    };
+  };
+
   return (
-    <div>
-      <Header />
+    <main>
+      <h1>Games</h1>
+      <hr />
 
-      <main>
-        <h1>Games</h1>
-      </main>
-    </div>
+      <GameList gamesData={allGamesData.gameCollection.items} />
+    </main>
   );
-};
-
-export default Page;
+}

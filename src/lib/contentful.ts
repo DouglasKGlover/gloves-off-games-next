@@ -1,13 +1,12 @@
 import { GraphQLClient } from "graphql-request";
 
-const SPACE_ID = process.env.CONTENTFUL_SPACE_ID!;
-const ACCESS_TOKEN = process.env.CONTENTFUL_ACCESS_TOKEN!;
-
-const endpoint = `https://graphql.contentful.com/content/v1/spaces/${SPACE_ID}`;
+const spaceId = process.env.CONTENTFUL_SPACE_ID!;
+const accessToken = process.env.CONTENTFUL_ACCESS_TOKEN!;
+const endpoint = `https://graphql.contentful.com/content/v1/spaces/${spaceId}`;
 
 export const client = new GraphQLClient(endpoint, {
   headers: {
-    Authorization: `Bearer ${ACCESS_TOKEN}`,
+    Authorization: `Bearer ${accessToken}`,
   },
 });
 

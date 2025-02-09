@@ -21,7 +21,7 @@ const GameList: React.FC<GameListProps> = ({ title, gamesData, dateType }) => {
 
           return (
             // List item for each game
-            <li key={game.slug}>
+            <li key={game.sys.id}>
               {/* Date */}
               {formattedDate && <span>{formattedDate} - </span>}{" "}
               {/* Link to game's page */}

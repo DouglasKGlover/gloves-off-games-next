@@ -1,6 +1,5 @@
-import Header from "@/components/layout/Header";
 import { fetchContent } from "@/lib/contentful";
-import { RECENTLY_UPDATED, LATEST_GAMES } from "@/lib/queries/gameQueries";
+import { RECENTLY_UPDATED, LATEST_GAMES } from "@/lib/queries/games";
 import GameList from "@/components/sections/GameList";
 import { Game } from "@/types/Game";
 
@@ -26,27 +25,23 @@ export default async function Home() {
 
   // Return the page
   return (
-    <div>
-      <main>
-        <Header />
+    <main>
+      <h1>Gloves Off Games</h1>
+      <p>My personal collection tracking site.</p>
 
-        <h1>Gloves Off Games</h1>
-        <p>My personal collection tracking site.</p>
+      <hr />
 
-        <hr />
+      <GameList
+        title="Recently Updated"
+        gamesData={recentlyUpdatedGamesData.gameCollection.items}
+        dateType="publishedAt"
+      />
 
-        <GameList
-          title="Recently Updated"
-          gamesData={recentlyUpdatedGamesData.gameCollection.items}
-          dateType="publishedAt"
-        />
-
-        <GameList
-          title="Latest Games"
-          gamesData={latestGamesData.gameCollection.items}
-          dateType="firstPublishedAt"
-        />
-      </main>
-    </div>
+      <GameList
+        title="Latest Games"
+        gamesData={latestGamesData.gameCollection.items}
+        dateType="firstPublishedAt"
+      />
+    </main>
   );
 }

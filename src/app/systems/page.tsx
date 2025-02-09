@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "../../components/layout/Header";
 
 export const metadata = {
   title: "Gloves Off Games - Systems",
@@ -8,13 +7,9 @@ export const metadata = {
 
 const Page: React.FC = () => {
   return (
-    <div>
-      <Header />
-
-      <main>
-        <h1>Systems</h1>
-      </main>
-    </div>
+    <main>
+      <h1>Systems</h1>
+    </main>
   );
 };
 
