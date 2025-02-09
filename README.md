@@ -22,7 +22,7 @@ Ensure you have **Node.js 18+** installed.
 
 ```sh
 git clone https://github.com/DouglasKGlover/gloves-off-games-next.git
-cd your-repo
+cd gloves-off-games-next
 ```
 
 ### 2️⃣ Install Dependencies
