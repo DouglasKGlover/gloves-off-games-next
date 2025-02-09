@@ -7,8 +7,8 @@ const endpoint = `https://graphql.contentful.com/content/v1/spaces/${SPACE_ID}`;
 
 export const client = new GraphQLClient(endpoint, {
   headers: {
-    Authorization: `Bearer ${ACCESS_TOKEN}`
-  }
+    Authorization: `Bearer ${ACCESS_TOKEN}`,
+  },
 });
 
 // fetchContent will take a query and variables and return the data from Contentful

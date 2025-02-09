@@ -3,7 +3,7 @@ import Header from "../../components/layout/Header";
 
 export const metadata = {
   title: "Gloves Off Games - Systems",
-  description: "A list of the video game systems I own games for."
+  description: "A list of the video game systems I own games for.",
 };
 
 const Page: React.FC = () => {

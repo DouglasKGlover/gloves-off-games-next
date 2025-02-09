@@ -7,7 +7,7 @@ const links = [
   { href: "/systems", label: "Systems" },
   { href: "/games", label: "Games" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/blog", label: "Blog" }
+  { href: "/blog", label: "Blog" },
 ];
 
 // The header component displays the main navigation for the site

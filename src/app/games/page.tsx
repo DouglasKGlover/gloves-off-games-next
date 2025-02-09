@@ -3,7 +3,7 @@ import Header from "../../components/layout/Header";
 
 export const metadata = {
   title: "Gloves Off Games - Games",
-  description: "A page where I list all of my games."
+  description: "A page where I list all of my games.",
 };
 
 const Page: React.FC = () => {
