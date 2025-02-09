@@ -2,8 +2,8 @@ import React from "react";
 import Header from "../../components/layout/Header";
 
 export const metadata = {
-  title: "Gloves Off Games - Stats",
-  description: "Some statistics about my video game collection."
+  title: "Gloves Off Games - Blog",
+  description: "A blog about video games. A glog, if you will."
 };
 
 const Page: React.FC = () => {
@@ -12,7 +12,8 @@ const Page: React.FC = () => {
       <Header />
 
       <main>
-        <h1>Stats</h1>
+        <h1>Blog</h1>
+        <hr />
       </main>
     </div>
   );

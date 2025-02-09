@@ -11,6 +11,7 @@ export const client = new GraphQLClient(endpoint, {
   }
 });
 
+// fetchContent will take a query and variables and return the data from Contentful
 export async function fetchContent(query: string, variables = {}) {
   return client.request(query, variables);
 }

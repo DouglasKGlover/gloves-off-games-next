@@ -1,16 +1,16 @@
 import React from "react";
 import Link from "next/link";
 
-// Array of links
+// Array of links for the navigation
 const links = [
   { href: "/", label: "Home" },
   { href: "/systems", label: "Systems" },
   { href: "/games", label: "Games" },
-  { href: "/stats", label: "Stats" },
   { href: "/gallery", label: "Gallery" },
-  { href: "/glog", label: "Glog" }
+  { href: "/blog", label: "Blog" }
 ];
 
+// The header component displays the main navigation for the site
 const Header: React.FC = () => {
   return (
     <header>

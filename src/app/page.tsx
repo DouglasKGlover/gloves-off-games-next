@@ -11,6 +11,7 @@ export const metadata = {
 };
 
 export default async function Home() {
+  // Fetch the data for the recently updated games and latest games
   const recentlyUpdatedGamesData = (await fetchContent(RECENTLY_UPDATED)) as {
     gameCollection: {
       items: Game[];
@@ -23,6 +24,7 @@ export default async function Home() {
     };
   };
 
+  // Return the page
   return (
     <div>
       <main>
